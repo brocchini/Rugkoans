@@ -1,11 +1,11 @@
 scenario Step1
 
 given
- AarchiveRoot
+ ArchiveRoot
  
 when
  Step1
- 
+
 then
   fileExists "README.md"
    and fileContains "README.md" "Hello!"

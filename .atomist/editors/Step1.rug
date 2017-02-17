@@ -1,4 +1,4 @@
 generator Step1
 
 with Project
-  do addFile "README.md" "Hello!" 
+  do addFile "README.md" "Hello!"

@@ -1,0 +1,13 @@
+scenario Step2 should create a new project with the mandatory project_name parameter
+
+let project_name = "mynewprojectname"
+
+given
+  ArchiveRoot
+
+when
+  Step2
+
+then
+  fileExists "README.md"
+    and fileContains "README.md" project_name

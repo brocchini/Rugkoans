@@ -1,0 +1,13 @@
+scenario Step1
+
+given
+ AarchiveRoot
+ 
+when
+ Step1
+ 
+then
+  fileExists "README.md"
+   and fileContains "README.md" "Hello!"
+   and fileExists "staticprojectfile.txt"
+   and fileContains "staticprojectfile.txt" "Important Content!"
